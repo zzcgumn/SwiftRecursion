@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5B5102061E22908100AC8E00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5102051E22908100AC8E00 /* main.swift */; };
+		5B51020D1E22909A00AC8E00 /* Hermite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B51020C1E22909A00AC8E00 /* Hermite.swift */; };
+		5B5102151E22941500AC8E00 /* testTestRecursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5102141E22941500AC8E00 /* testTestRecursion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,21 @@
 /* Begin PBXFileReference section */
 		5B5102021E22908100AC8E00 /* testRecursion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testRecursion; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5102051E22908100AC8E00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5B51020C1E22909A00AC8E00 /* Hermite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hermite.swift; sourceTree = "<group>"; };
+		5B5102121E22941500AC8E00 /* testTestRecursion.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTestRecursion.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5102141E22941500AC8E00 /* testTestRecursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTestRecursion.swift; sourceTree = "<group>"; };
+		5B5102161E22941500AC8E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B5101FF1E22908100AC8E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B51020F1E22941500AC8E00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5102041E22908100AC8E00 /* testRecursion */,
+				5B5102131E22941500AC8E00 /* testTestRecursion */,
 				5B5102031E22908100AC8E00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5102021E22908100AC8E00 /* testRecursion */,
+				5B5102121E22941500AC8E00 /* testTestRecursion.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +73,18 @@
 			isa = PBXGroup;
 			children = (
 				5B5102051E22908100AC8E00 /* main.swift */,
+				5B51020C1E22909A00AC8E00 /* Hermite.swift */,
 			);
 			path = testRecursion;
+			sourceTree = "<group>";
+		};
+		5B5102131E22941500AC8E00 /* testTestRecursion */ = {
+			isa = PBXGroup;
+			children = (
+				5B5102141E22941500AC8E00 /* testTestRecursion.swift */,
+				5B5102161E22941500AC8E00 /* Info.plist */,
+			);
+			path = testTestRecursion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +107,23 @@
 			productReference = 5B5102021E22908100AC8E00 /* testRecursion */;
 			productType = "com.apple.product-type.tool";
 		};
+		5B5102111E22941500AC8E00 /* testTestRecursion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5102171E22941500AC8E00 /* Build configuration list for PBXNativeTarget "testTestRecursion" */;
+			buildPhases = (
+				5B51020E1E22941500AC8E00 /* Sources */,
+				5B51020F1E22941500AC8E00 /* Frameworks */,
+				5B5102101E22941500AC8E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testTestRecursion;
+			productName = testTestRecursion;
+			productReference = 5B5102121E22941500AC8E00 /* testTestRecursion.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +135,11 @@
 				ORGANIZATIONNAME = "Martin Nygren";
 				TargetAttributes = {
 					5B5102011E22908100AC8E00 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JNH48ZQ2BC;
+						ProvisioningStyle = Automatic;
+					};
+					5B5102111E22941500AC8E00 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = JNH48ZQ2BC;
 						ProvisioningStyle = Automatic;
@@ -112,16 +159,36 @@
 			projectRoot = "";
 			targets = (
 				5B5102011E22908100AC8E00 /* testRecursion */,
+				5B5102111E22941500AC8E00 /* testTestRecursion */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B5102101E22941500AC8E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B5101FE1E22908100AC8E00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B51020D1E22909A00AC8E00 /* Hermite.swift in Sources */,
 				5B5102061E22908100AC8E00 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B51020E1E22941500AC8E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5102151E22941500AC8E00 /* testTestRecursion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +301,34 @@
 			};
 			name = Release;
 		};
+		5B5102181E22941500AC8E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JNH48ZQ2BC;
+				INFOPLIST_FILE = testTestRecursion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.nygren.martin.testTestRecursion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5B5102191E22941500AC8E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JNH48ZQ2BC;
+				INFOPLIST_FILE = testTestRecursion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.nygren.martin.testTestRecursion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -251,6 +346,14 @@
 			buildConfigurations = (
 				5B51020A1E22908100AC8E00 /* Debug */,
 				5B51020B1E22908100AC8E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B5102171E22941500AC8E00 /* Build configuration list for PBXNativeTarget "testTestRecursion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5102181E22941500AC8E00 /* Debug */,
+				5B5102191E22941500AC8E00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
